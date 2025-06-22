@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration From</title>
+</head>
+<body>
+    <H1>Student Redistration Form</H1>
+    <p>Please fill out the form below to register</p>
+
+    <fieldset id="perosnalinformation">
+        <legend>Personal Information</legend>
+
+        <form id="personalInformation">
+            <label for="firstName">First Name :</label>
+            <input type="text" id="firstName">
+            <br><br>
+            <label for="lastName">Last Name :</label>
+            <input type="text" name="lastName" id="lastName">
+            <br><br>
+            <label for="dob">Date of Birth :</label>
+            <input type="date" name="dob" id="dob">
+            <br><br>
+            <label for="gender">Gender :</label>
+            <label for="male">Male:</label>
+            <input type="radio" name="male" id="male">
+            <label for="femal">Female:</label>
+            <input type="radio" name="female" id="female">
+            <label for="other">Other:</label>
+            <input type="radio" name="other" id="other">
+        </form>
+    </fieldset>
+    <hr>
+
+    <fieldset id="address">
+        <legend>Address Information</legend>
+        <form >
+            <label for="addressinput">Address:</label><br>
+            <textarea name="addressinput" id="addressinput" ></textarea>
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br><br>
+            <label for="state">State:</label>
+            <input type="text" name="" id="">
+            <br><br>
+            <label for="zipcode">ZIP Code:</label>
+            <input type="text" name="zipcode" id="zipcode">
+        </form>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend>Educational Information</legend>
+
+        <form action="">
+            <label for="highschool">Hight School:</label>
+            <input type="text" name="highschool" id="highschool">
+            <br><br>
+            <label for="gpa">GPA:</label>
+            <input type="text" name="gpa" id="gpa">
+            <br><br>
+            <label for="intendedMajor">Intended Major:</label>
+            <input type="text" name="intendedMajor" id="intendedMajor">
+            <br><br>
+            <label for="yog">Year Of Graduation:</label>
+            <input type="year" name="yog" id="yog">
+        </form>
+    </fieldset>
+    <hr>
+
+    <fieldset id="additionalInformation">
+        <legend>Additional Information</legend>
+
+        <form action="">
+            <label for="hobbies">Interests and Hobbies:</label><br>
+            <textarea name="hobbies" id="hobbies" ></textarea>
+            <br><br>
+            <label for="comments">Additional Comments:</label><br>
+            <textarea name="comments" id="comments" ></textarea>
+            <br><br>
+        </form>
+    </fieldset>
+    <hr>
+    <button id="register">Register</button>
+
+    <footer>
+        <p>@2024 Student Registration.All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
