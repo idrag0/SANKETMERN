@@ -4,6 +4,10 @@
 // 3. write a function to upload the file written in previous step to a new url
 
 function download(url, cb){
+    /**
+     * downloads data from a url and 
+     * pass the downloaded data to the callback function
+     */
     console.log("downloading from ", url);
     setTimeout(function processDownload() {
 
@@ -13,12 +17,11 @@ function download(url, cb){
     },4000);
 }
 
-download("www.abc.com", function process(content){
-    console.log("download data is",content);
-})
-
-
 function writeFile(data, cb){
+    /**
+     * writes data to a file and 
+     * pass the filename to the callback function
+     */
     console.log("started weriting file", data);
     setTimeout(function processWrite() {
         console.log("completed writing file");
@@ -27,11 +30,11 @@ function writeFile(data, cb){
     }, 2000);
 }
 
-writeFile("data to write", function process(fileName){
-    console.log("file written with name", fileName);
-});
-
 function uploadFile(url, fileName, cb){
+    /**
+     * uploads a file to a url and 
+     * pass the response to the callback function
+     */
     console.log("started uploading file", fileName, "to", url);
     setTimeout(function processUpload() {
         console.log("completed uploading file");
