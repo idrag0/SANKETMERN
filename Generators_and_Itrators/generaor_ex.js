@@ -1,4 +1,4 @@
-
+ 
 function* fetchNextElement(){
     console.log("I am a generator function");
     yield 1;
@@ -6,6 +6,8 @@ function* fetchNextElement(){
     console.log("somewhere in the middle");
     yield 3;
     yield 4;
+    yield 5;
+    console.log("I am done");
 }
 
 const iter = fetchNextElement();
